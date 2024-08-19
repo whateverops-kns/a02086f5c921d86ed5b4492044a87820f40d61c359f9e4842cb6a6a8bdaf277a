@@ -104,13 +104,14 @@ terraform destroy
 - Block syntax: Terraform use block syntax for everything from providers to data sources. Each block start with type and then label and name label. Inside the block everything is key values or nested block. Nested block only support block type.
 - **Sample Structure:**
 
-![terraform snippets.png](./assets/terraform-snippet-labels.png)
+![terraform snippets.png](./assets/tf-snippet-labels.png)
 
 - **Sample Code**:
 
-![sample](./assets/tf-snippet-sample.png.png)
+![sample](./assets/tf-snippet-sample.png)
 
 - Sample Terraform Object Reference:
+
 - **How to reference terraform resources:**
 
 ![sample](./assets/tf-snippet-obj-ref.png)
@@ -264,7 +265,7 @@ terraform workspace delete 'workspace-name'
     - File
         - File copying operation provisioner
         
-        ```json
+        ```hcl
         # Copies the configs.d folder to /etc/configs.d
           provisioner "file" {
             source      = "conf/configs.d"
@@ -275,7 +276,7 @@ terraform workspace delete 'workspace-name'
     - local-exec
         - Run on local machine
         
-        ```json
+        ```hcl
         resource "aws_instance" "web" {
           # ...
         
@@ -296,7 +297,7 @@ terraform workspace delete 'workspace-name'
     - remote-exec
         - Run on remote machine or Terraform resource
         
-        ```json
+        ```hcl
         resource "aws_instance" "web" {
           # ...
         
