@@ -1,6 +1,7 @@
 # Core Concepts
 
-Owner: Khant
+Owner: Khant Naing Set (WhateverOps)
+Tags: IaC, Terraform
 
 ## **What is IAC**
 
